@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ZimmerVerwaltungGUI">
+  <grid id="27dc6" binding="hauptPanel" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="6e80c" class="javax.swing.JLabel" binding="zimmerNrLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="4" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="98" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Zimmernummer:"/>
+        </properties>
+      </component>
+      <component id="ef305" class="javax.swing.JLabel" binding="preisLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="98" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Preis pro Nacht:"/>
+        </properties>
+      </component>
+      <component id="e563" class="javax.swing.JTextField" binding="zimmerNrTF">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="6f9dc" class="javax.swing.JLabel" binding="kategorieLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="98" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Kategorie:"/>
+        </properties>
+      </component>
+      <component id="45fa1" class="javax.swing.JTextField" binding="preisTF">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <editable value="true"/>
+        </properties>
+      </component>
+      <component id="7df08" class="javax.swing.JComboBox" binding="kategorieComboBox">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Einzel"/>
+            <item value="Doppel"/>
+            <item value="Suite"/>
+          </model>
+          <name value=""/>
+        </properties>
+      </component>
+      <component id="faf79" class="javax.swing.JCheckBox" binding="verfuegbarCheckBox">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Nicht verfügbar (Status)"/>
+        </properties>
+      </component>
+      <scrollpane id="8d833" binding="anzeigenScrollPane">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="b07d" class="javax.swing.JList" binding="anzeigenList">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="b0006" class="javax.swing.JButton" binding="speichernButton">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Speichern"/>
+        </properties>
+      </component>
+      <component id="919aa" class="javax.swing.JLabel" binding="zimmeruebersichtLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Zimmerübersicht"/>
+        </properties>
+      </component>
+      <grid id="798e4" binding="Button" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="765c6" class="javax.swing.JButton" binding="alleZimmerButton">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Alle Zimmer"/>
+            </properties>
+          </component>
+          <component id="d189c" class="javax.swing.JButton" binding="auslastungButton">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Auslastung"/>
+            </properties>
+          </component>
+          <component id="18c9c" class="javax.swing.JButton" binding="loeschenButton">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Löschen"/>
+            </properties>
+          </component>
+          <component id="d66a2" class="javax.swing.JButton" binding="freieZimmerButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <name value="freiezimmerButton"/>
+              <text value="Freie Zimmer"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
