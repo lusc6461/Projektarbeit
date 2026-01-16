@@ -63,7 +63,7 @@ Zur Planung und Erklärung der Objektstruktur wurde ein UML-Klassendiagramm verw
 Es zeigt die Klassen `Zimmer`, `ZimmerVerwaltung` und `ZimmerVerwaltungGUI` sowie deren
 Beziehungen zueinander.
 
-![img_1.png](![UML-Diagramm](src/main/resources/img.png)
+![img.png](![UML-Diagramm](src/main/resources/img.png)
 
 
 
